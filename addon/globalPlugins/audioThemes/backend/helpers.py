@@ -2,6 +2,8 @@
 
 # Copyright (c) 2014-2016 Musharraf Omer and Others
 # This file is covered by the GNU General Public License.
+from __future__ import (absolute_import, division,
+                        print_function, unicode_literals)
 
 import os
 import wx

@@ -41,7 +41,7 @@ class CreateNewDialog(BaseEditorDialog):
 		  default_filename="%s.atp" %self.name,
 		  # Translators: The extention hint for audio theme packages shown in a dialog asking the user to save the audio theme package.
 		  wildcard=("{hint}(*.{ext})"+"|*.{ext}").format(hint= _("Audio Theme Package"), ext="atp"),
-		  flags=wx.SAVE | wx.OVERWRITE_PROMPT, parent=self)
+		  flags=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT, parent=self)
 		if not filename:
 			return
 		helpers.makeZipFile(filename, self.audioTheme.directory)
