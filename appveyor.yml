@@ -8,15 +8,14 @@ install:
 
 
 build_script:
-  - cd source
   - scons
   - scons pot
 
 artifacts:
-  - path: 'source\*.nvda-addon'
+  - path: '*.nvda-addon'
     name: addon
     type: application/x-nvda-addon
-  - path: 'source\*.pot'
+  - path: '*.pot'
     type: application/x-pot
 deploy:
   release: $(APPVEYOR_REPO_TAG_NAME)
