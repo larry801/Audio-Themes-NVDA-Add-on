@@ -124,7 +124,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.playObject(obj)
 		nextHandler()
 
-	def event_becomeNavigatorObject(self, obj, nextHandler):
+	def event_becomeNavigatorObject(self, obj, nextHandler,isFocus=False):
 		self.playObject(obj)
 		nextHandler()
 
